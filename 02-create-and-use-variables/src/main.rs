@@ -1,6 +1,7 @@
 fn main() {
-    // =========================
+
     // Create a variable
+    // =========================
 
     let a_number = 10;
     let a_boolean = false;
@@ -11,8 +12,8 @@ fn main() {
     println!("the  boolean is {}!", a_boolean);
 
 
-    // =========================
     // Mutability
+    // =========================
 
     let a_number_not_mutable = 10;
     println!("The number is {}.", a_number_not_mutable);
@@ -22,8 +23,10 @@ fn main() {
     // println!("Now the number is {}.", a_number_not_mutable);
 
 
+    // Mutable variables
     // =========================
-    // mutable variables
+
+    // use `mut` keyword to define a mutable variable
 
     let mut a_number_mutable = 10;
     println!("The mutable number is {}.", a_number_mutable);
@@ -32,17 +35,16 @@ fn main() {
     println!("Not the mutable variable is {}!", a_number_mutable);
 
 
-    // ==========================
     // Shadowing
+    // ==========================
 
-    // You can a declare a new variable with the same name of the previous variable, which creates
+    // You can declare a new variable with the same name of the previous variable, which creates
     // a new binding. In Rust, this operation is called "shadowing" because the new variable
     // shadowing the previous variable. The old variable is still exists, but you can't refer it
     // in this scope anymore.
 
     // The variable doesn't need to be mutable. No mutation occurs because every operation creates
     // a new variable while shadowing the previous one.
-
 
     let number = 10;
 
@@ -51,10 +53,5 @@ fn main() {
     let number = number * 2;
 
     println!("Finally the number is {}!", number)
-    
-
-    
-
-
 
 }

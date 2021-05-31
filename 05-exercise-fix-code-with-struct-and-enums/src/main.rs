@@ -14,7 +14,10 @@ enum Transmission {
 
 fn car_factory(color: String, transmission: Transmission, convertible: bool) -> Car {
 
-    // To Do - Fix this part of the function to create a new Car object as requested by the client
+    // ToDo - Fix this part of the function to create a new Car object as requested by the client
+    // let car: Car = {}
+
+    // My fix:
     let car: Car = Car {
         color,
         transmission,

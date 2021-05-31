@@ -1,6 +1,5 @@
 fn main() {
 
-    // ================================
     // Rust is a statically language.
     // The compiler must know exactly data type for each variable in your code.
 
@@ -19,11 +18,11 @@ fn main() {
     // Error, consider giving `number` a type
     // let number = "42".parse().expect("Not a number");
 
-    // The compiler err:
+    // The compiler will occur some error
 
 
-    // ================================
     // Rust built-in data types
+    // ================================
 
     // Rust comes with some built-in types to express numbers, text and truthiness.
     // We'll cover each of these types in fhe following subtopics.
@@ -62,15 +61,15 @@ fn main() {
     // Multiplication
     println!("3 * 6 = {}", 3 * 6);
 
-    // ============================
     // Boolean
+    // ============================
 
     let is_bigger = 1 > 4;
     println!("{}", is_bigger);
 
 
-    // ==========================
     // Character and strings
+    // ==========================
 
     // The char type is most primitive type among them and is specified with single quotation marks:
 
@@ -104,8 +103,8 @@ fn main() {
     println!("{}", hello);
 
 
-    // ===============================
     // Tuples
+    // ===============================
 
     // A tuple is a group of values of different types collected in one compounds.
     // They have fixed length, meaning that after they're declared, they can't grow or

@@ -1,7 +1,7 @@
 fn main() {
 
-    // =================
     // Struct
+    // =================
 
     // Structs in Rust come in three flavours: classic structs, tuple struct and unit structs.
 
@@ -20,8 +20,8 @@ fn main() {
     // Unit structs are most commonly used as markers.
 
 
-    // ==================
     // Instantiate Struct
+    // ==================
 
     // After we define a struct, we use it by creating an instance and specifying concrete values for each field.
 
@@ -42,8 +42,8 @@ fn main() {
     }
 
 
-    // ==========
     // Enum
+    // ==========
 
     enum WebEvent {
         PageLoad,
@@ -55,7 +55,4 @@ fn main() {
         Click{x: i64, y: i64},
     }
 
-    
-
-    
 }

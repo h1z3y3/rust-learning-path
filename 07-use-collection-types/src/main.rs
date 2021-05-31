@@ -1,12 +1,10 @@
 use std::collections::HashMap;
 
 fn main() {
-    // ===============
     // Besides tuples, Rust has many other compound types that can group multiple values into one single type.
 
-
-    // ==============
     // Array
+    // ==============
 
     // In other words, arrays have a fixed length.
     // Every element of an array must be of the same type.
@@ -26,8 +24,8 @@ fn main() {
     // They're also useful when you want to ensure you always have a fixed number of elements.
 
 
-    // ====================
     // Vector
+    // ====================
 
     // store data in the heap
 
@@ -57,8 +55,8 @@ fn main() {
     let pop = new_v.pop();
     println!("Current vector is {:?}, the popped value is {:?}", new_v, pop);
 
-    // ====================
     // Hash maps
+    // ====================
 
     // store data in the heap
     // Like vectors, hash maps are growable, store data in the heap, and access its items are check at run time
@@ -78,6 +76,5 @@ fn main() {
 
     let v = book_reviews.get("key1");
     println!("The value from hash is: {:?}", v)
-    
 
 }
