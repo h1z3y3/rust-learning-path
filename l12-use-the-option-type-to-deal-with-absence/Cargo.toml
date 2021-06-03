@@ -1,5 +1,5 @@
 [package]
-name = "l12-use-the-option-type-to-deal-with-absense"
+name = "l12-use-the-option-type-to-deal-with-absence"
 version = "0.1.0"
 authors = ["h1z3y3 <gmzhaoyang@gmail.com>"]
 edition = "2018"
