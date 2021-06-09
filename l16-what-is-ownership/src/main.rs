@@ -90,4 +90,46 @@ fn main() {
 
     // In Rust, ownership transfer data (it's moving) is the default behavior.
 
+
+    // Copying instead of moving.
+    // =========================
+
+    // Values that implement `Copy` trait, don't get moved but are rather copied.
+
+    // Type `u32` implements the `Copy` trait.
+    fn process_u32(input: u32) {}
+
+    fn caller_u32() {
+        let n = 1u32;
+        process_u32(n); // Ownership of the number in `n` is copied into `process`
+        process_u32(n); // `n` can be used again because it wasn't moved, it was copied.
+    }
+
+    // The same action occurs for most simple types.
+    // Copying number is inexpensive, so it makes sense for these values to be copied.
+    // Copying string or vector or other complex types can be very expensive, so they don't
+    // implement the `Copy` trait and are instead moved.
+
+
+    // Copying types that don't implement `Copy`
+    // ========================================
+
+    // A call to `.clone()` will duplicate the memory and produce a new value.
+    // The new value is moved meaning the old value can still be used.
+
+    fn process_clone(input: String) {}
+
+    fn caller_clone() {
+        let s = String::from("hello, world");
+
+        process_clone(s.clone()); // Passing another value, cloned from `s`
+        process_clone(s); // s was never moved and so it can still be used.
+    }
+
+    // This approach is useful, but it can make your code slower as every call to `clone` makes a
+    // full copy of the data.
+
+    // This method often includes memory allocations or other expensive operations.
+    // We can avoid these costs if we "borrow" values by using references.
+
 }
